@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Encipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="inner-content">
+      <h1> ENCIPHER </h1>
+      <form action="/api/file" method="POST">
+        <input type="file" /><br/>
+        <button class="button" type="submit">Pre-process file</button>
+      </form>
+    </div>
+  </div>
+  <style>
+    body {
+      background-image: linear-gradient(to right, #fc6456 , #f7d9d7);
+      font-family: sans-serif;
+    }
+    .main-content {
+      width: 50%;
+      margin: 0px auto;
+    }
+    .inner-content {
+      width: 50%;
+      margin: 0px auto;
+    }
+    .button {
+        text-decoration: none;
+        color: red;
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+    input {
+      text-decoration: none;
+        color: red;
+      width: 250px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+    }
+    h1 {
+        color: red;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "name": "smart-food-management",
+  "version": "1.0.0",
+  "description": "Web-app for Food waste management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashutoshm1771/Smart-Food-Management.git"
+  },
+  "keywords": [
+    "food",
+    "food",
+    "waste",
+    "food",
+    "waste",
+    "prevention",
+    "waste"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashutoshm1771/Smart-Food-Management/issues"
+  },
+  "homepage": "https://github.com/ashutoshm1771/Smart-Food-Management#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "bootstrap": "^5.2.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-recaptcha": "^5.1.0",
+    "firebase-admin": "^11.5.0",
+    "helmet": "^6.0.1",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.1",
+    "npm": "^9.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

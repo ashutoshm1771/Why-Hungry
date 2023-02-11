@@ -1,7 +1,31 @@
 1. Application to RaspberryPi integration
 
-    1.1 Is it through WiFi or cloud?
-    
+    1.1 Through WiFi
+
     1.2 Correct PIN code should be sent to the RaspberryPi after every generation of PinCode
 
     1.3 Once lock is opened, RaspberryPi should send a notif to application.
+
+
+
+
+2. Within the application
+
+    2.1 Login / Signup
+
+    2.2 If attempts are left, generate pin code. 
+        2.2.1 Send pincode to RaspberryPi
+
+    2.3
+    --> Case 1. User uses the PinCode to unlock
+
+            2.3 Box sends a notification to application whether it opened.
+                2.3.1 Decrease the number of attempts for that User
+                2.3.2 Invalidate that pincode (both in the application and the box) 
+
+    --> Case 2. PinCode generated but not used 
+            Trivial Case
+
+    2.4 Nearby food info (Location)
+        
+

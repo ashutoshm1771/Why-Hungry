@@ -1,0 +1,31 @@
+
+body {
+    background-image: linear-gradient(to right, #fc6456 , #f7d9d7);
+    font-family: sans-serif;
+}
+.main-content {
+    width: 50%;
+    margin: 0px auto;
+}
+.inner-content {
+    width: 50%;
+    margin: 0px auto;
+}
+.button {
+    text-decoration: none;
+    color: red;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+h1 {
+    color: red;
+}

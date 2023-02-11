@@ -1,0 +1,59 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encipher
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="main-content">
+        <div class="inner-content">
+            <% if(answer == true) {%>
+                <span>Password exists</span>
+            <% } else { %>
+                <span>Password does not exist</span>
+            <% } %>
+          <h1>Enter another password !</h1>
+          <form action="/api/check" method="POST">
+            <input type="text" placeholder="Password" name="password" required/>
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    <style>
+        body {
+          background-image: linear-gradient(to right, #fc6456 , #f7d9d7);
+          font-family: sans-serif;
+        }
+        .main-content {
+          width: 50%;
+          margin: 0px auto;
+        }
+        .inner-content {
+          width: 50%;
+          margin: 0px auto;
+        }
+        .button {
+        text-decoration: none;
+        color: red;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+        input {
+          width: 150px;
+          height: 30px;
+          border-radius: 5px;
+          border: none;
+        }
+        h1 {
+            color: red;
+        }
+      </style>
+  </body>
+</html>
