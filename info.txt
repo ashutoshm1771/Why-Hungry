@@ -1,0 +1,7 @@
+1. Application to RaspberryPi integration
+
+    1.1 Is it through WiFi or cloud?
+    
+    1.2 Correct PIN code should be sent to the RaspberryPi after every generation of PinCode
+
+    1.3 Once lock is opened, RaspberryPi should send a notif to application.
