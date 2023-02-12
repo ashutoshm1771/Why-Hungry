@@ -25,7 +25,8 @@ app.use(express.json());
 app.use(helmet());
 app.use(compression());
 
-app.use(express.static('./view'));
+app.use(express.static('views'));
+app.use(express.static('public'));
 
 app.listen(3000, function() {
     console.log('listening on 3000')
