@@ -39,11 +39,11 @@
                     <form id="login-form" action="/api/login" method="POST">
                       <div class="form-group mb-1">
                         <label for="exampleInputuserId1">User ID</label>
-                        <input class="form-control" name="userId" id="exampleInputuserId1" aria-describedby="userIdHelp" placeholder="Enter userId">
+                        <input class="form-control" name="userId" id="exampleInputuserId1" aria-describedby="userIdHelp" required placeholder="Enter userId">
                       </div>
                       <div class="form-group mb-5">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" required placeholder="Password">
                       </div>
                       <button class="btn btn-primary g-recaptcha" 
                           data-sitekey="reCAPTCHA_site_key" 
@@ -59,49 +59,68 @@
               </div>
             </div>
             <div class="col-sm-3 m-5">
-            <div class="card p-2 bg-light mb-3" style="max-width: 18rem;">
-              <div class="card-header">Business Login</div>
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">
-                  <% if (outletMessage && outletMessage != null && outletMessage.length > 0) { %>
-                    <span>Wrong credentials</span>
-                  <% } %>
-                  <form id="login-form" action="/api/login" method="POST">
-                    <div class="form-group mb-1">
-                      <label for="exampleInputOutletId1">Business Email</label>
-                      <input class="form-control" name="outletId" id="exampleInputOutletId1" aria-describedby="outletIdHelp" required placeholder="Enter business email">
-                    </div>
-                    <div class="form-group mb-5">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1" required placeholder="Password">
-                    </div>
-                    <button class="btn btn-primary g-recaptcha" 
-                        data-sitekey="reCAPTCHA_site_key" 
-                        data-callback='onSubmit' 
-                        data-action='submit'>Submit</button>
-                  </form>
-                </p>
+              <div class="card p-2 bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Business Login</div>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">
+                    <% if (outletMessage && outletMessage != null && outletMessage.length > 0) { %>
+                      <span>Wrong credentials</span>
+                    <% } %>
+                    <form id="login-form" action="/api/login" method="POST">
+                      <div class="form-group mb-1">
+                        <label for="exampleInputOutletId1">Business Email</label>
+                        <input class="form-control" name="outletId" id="exampleInputOutletId1" aria-describedby="outletIdHelp" required placeholder="Enter business email">
+                      </div>
+                      <div class="form-group mb-5">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" required placeholder="Password">
+                      </div>
+                      <button class="btn btn-primary g-recaptcha" 
+                          data-sitekey="reCAPTCHA_site_key" 
+                          data-callback='onSubmit' 
+                          data-action='submit'>Submit</button>
+                    </form>
+                  </p>
+                </div>
+                <div class="m-4">
+                  <span>New User? </span>
+                  <button class="btn btn-dark"><a style="color: white" href="/signup">Signup</a></button>
+                </div>
               </div>
-              <div class="m-4">
-                <span>New User? </span>
-                <button class="btn btn-dark"><a style="color: white" href="/signup">Signup</a></button>
-              </div>
-            </div>
             </div>
             <div class="col-sm-3 m-5">
-              <div class="card bg-light p-2 mb-3" style="max-width: 18rem;">
-                <!-- <div class="card-header">Admin Panel</div> -->
+              <div class="card p-2 bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Ambassador Login</div>
                 <div class="card-body">
-                  <h5 class="card-title p-4"><button class="btn btn-dark"><a style="color: white" href="/admin">Admin Panel</a></button></h5>
+                  <h5 class="card-title"></h5>
                   <p class="card-text">
-                      
+                    <% if (outletMessage && outletMessage != null && outletMessage.length > 0) { %>
+                      <span>Wrong credentials</span>
+                    <% } %>
+                    <form id="login-form" action="/api/login" method="POST">
+                      <div class="form-group mb-1">
+                        <label for="exampleInputOutletId1">Ambassador Email</label>
+                        <input class="form-control" name="outletId" id="exampleInputOutletId1" aria-describedby="outletIdHelp" required placeholder="Enter Ambassador Email">
+                      </div>
+                      <div class="form-group mb-5">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" required placeholder="Password">
+                      </div>
+                      <button class="btn btn-primary g-recaptcha" 
+                          data-sitekey="reCAPTCHA_site_key" 
+                          data-callback='onSubmit' 
+                          data-action='submit'>Submit</button>
+                    </form>
                   </p>
+                </div>
+                <div class="m-4">
+                  <span>New User? </span>
+                  <button class="btn btn-dark"><a style="color: white" href="/signup">Signup</a></button>
                 </div>
               </div>
             </div>
           </div>
-          
           </div>
         </div>
     <script>
@@ -147,7 +166,6 @@
       }
       h1 {
         font-family: Helvetica;
-        
       }
     </style>
     

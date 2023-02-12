@@ -1,0 +1,92 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why-hungry
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <nav class="nav navbar-dark bg-dark p-4 d-flex justify-content-between">
+      <a class="mt-1 navbar-brand active" href="#">Welcome</a>
+      <a class="btn btn-danger" href="/">Logout</a>
+    </nav>
+    <div class="main-content">
+      <marquee class="mt-5">
+        <h1 class="site-header">Why Hungry?</h1>
+      </marquee>
+        <!-- <button class="button navigate-button"><a href="/admin">Admin Panel</a></button> -->
+        <div class="container-sm jumbotron" style="max-width: 30rem;">
+          <!-- <button class="button navigate-button"><a href="/admin">Admin Panel</a></button> -->
+        
+          <div class="mt-5 mb-5">
+            <div class="row">
+              <!-- Loop through outlet -->
+                <% for(var i = 0; i < outlets.length; i++) {%>
+                  <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><%= outlets[i].name %></div>
+                    <div class="card-body">
+                      <h5 class="card-title"><%= outlets[i].location %></h5>
+                      <p class="card-text"><a href="mailto: <%= outlets[i].email %>" class="btn btn-primary"><%= outlets[i].email %></a></p>
+                    </div>
+                  </div>
+                <% } %>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-primary"><a style="color: white" href="/admin">Add another outlet</a></button>
+          </div>
+          </div>
+        </div>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("login-form").submit();
+      }
+    </script>
+    <style>
+      body {
+        background-image: linear-gradient(to right, #e3f2fd , #f7d9d7);
+        font-family: sans-serif;
+      }
+      /* .main-content {
+        width: 50%;
+        margin: 0px auto;
+      }
+      .inner-content {
+        width: 50%;
+        margin: 0px auto;
+      } */
+      .navigate-button {
+        margin-top: 50px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .button {
+        text-decoration: none;
+        color: red;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      input {
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+      }
+      h1 {
+        font-family: Helvetica;
+        
+      }
+    </style>
+    
+  </body>
+</html>
