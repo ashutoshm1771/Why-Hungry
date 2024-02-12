@@ -1,5 +1,6 @@
 # Smart-Food-Management
-Web-application for integrating smart food management system 
+Just a simple UI for integrating embedded Smart Food Management System device, an smart & autonomous food storage device.
+
 
 ![image](https://user-images.githubusercontent.com/48184601/218324720-290e9d39-f8f5-4206-bf7c-1eb11b39d4a5.png)
 
